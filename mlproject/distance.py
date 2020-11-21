@@ -16,10 +16,10 @@ def haversine(lon1, lat1, lon2, lat2):
     r = 6371  # Radius of earth in kilometers. Use 3956 for miles
     return c * r
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     # Le Wagon location
-        lat1, lon1 = 48.865070, 2.380009
+    lat1, lon1 = 48.865070, 2.380009
     #Insert your coordinates from google maps here
-    #lat2, lon2 = x, y
-        distance = haversine(lon1, lat1, lon2, lat2)
-        print(distance)
+    lat2, lon2 = 51.459293, -0.122424
+    distance = haversine(lon1, lat1, lon2, lat2)
+    print(distance)
